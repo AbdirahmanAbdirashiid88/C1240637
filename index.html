@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Recipe Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Interactive Recipe Converter</h1>
+    <p>Convert servings, change units, and print your recipe</p>
+</header>
+
+<nav>
+    <ul>
+        <li id="nav-home">Home</li>
+        <li id="nav-recipes">Recipes</li>
+        <li id="nav-about">About</li>
+    </ul>
+</nav>
+
+<main>
+    <section id="home" class="active">
+        <h2>Add Ingredient</h2>
+        <form id="ingredientForm">
+            <input type="text" id="name" placeholder="Ingredient Name" required>
+            <input type="number" id="amount" step="0.01" placeholder="Amount" required>
+</select><h3>Serving Size</h3>
+       <input type="number" id="servings" placeholder="Enter number of servings" min="" value="">
+
+            <select id="unit">
+                <option value="pcs">Pieces (pcs)</option>
+                <option value="kg">Kilogram (kg)</option>
+                <option value="cup">Cup</option>
+                <option value="ml">Milliliter (ml)</option>
+                <option value="tbsp">Tablespoon (tbsp)</option>
+            </select><h3>Serving Size</h3>
+       
+             <button type="submit" id="addBtn">Convert</button>
+            <p id="error" style="color:red;"></p>
+        </form>
+
+        
+        <h3>Ingredients List</h3>
+        <div id="ingredients" class="recipe-box"></div>
+        <button id="clearBtn" class="danger">Clear All</button>
+
+        <h3>Printable Recipe Card</h3>
+        <div id="printArea" class="recipe-box"></div>
+    </section>
+
+    <section id="recipes">
+        <h2>What This Project Does</h2>
+        <div class="info-card">
+            <p><strong>Interactive Recipe Converter</strong> waa website kuu oggolaanaya inaad si toos ah u beddesho qiyaasta cuntooyinka marka tirada dadka la siinayo isbeddesho.</p>
+            <p>Waxaa loogu talagalay inuu kuu fududeeyo jikada, isagoo xisaabinaya inta saxda ah ee aad u baahan tahay.</p>
+            <ul>
+                <li>Beddelka Servings-ka si degdeg ah.</li>
+                <li>Xisaabinta miisaanka maaddooyinka.</li>
+                <li>Soo saarista kaadh diyaar ah oo la daabici karo.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Student</h2>
+        <div class="info-card">
+            <p><strong>Name:</strong> MOhamed Barre Aadan</p>
+            <p><strong>ID:</strong> C1240637</p>
+            <p><strong>Class:</strong> CM241</p>
+            <p><strong>Mobile:</strong> 0613906681</p>
+            <p><strong>Country:</strong> SOMALIA/MOGADISHU</p>
+            <p><strong>District:</strong> DHARKENLEY</p>
+            <p><strong>Project:</strong> Final Web Development Assignment 2026</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Mohamed Barre Aadan| All Rights Reserved</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
